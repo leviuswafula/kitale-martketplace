@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitale Marketplace</title>
+    <link rel="stylesheet" type="text/css" href="https://kitale marketplace.com/styles.css">
+</head>
+<style>
+        body  {
+            font-family: Arial, sans-serif;
+            margin: 2px;
+            padding: 2px;
+            text-justify: inherit;
+        }
+        .search-bar {
+            background-color: #f2f2f2;
+            padding: 5px;
+            text-align: center;
+        }
+        .search-input {
+            width: 40%;
+            padding: 4px;
+        }
+        .search-button {
+            padding: 2px 10px;
+            background-color: #032d70;
+            color: #fff;
+            border: 2px;
+            cursor: pointer;
+        }      
+           header {
+            background-color: #032d70;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .title-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        header {
+            background-color: #032d70;
+            color: #8b3939;
+            text-align: right;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #cf7c93;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        footer {
+          background-color: #838383;
+          color: rgb(32, 1, 31);
+          text-align: center;
+          padding: 0;
+          position: absolute;
+          bottom: 10;
+          width:  100%;
+        } 
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        
+            class containerhugk  {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .search-container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 5px;
+            flex: 1;
+        }
+
+        .search-container button {
+            background-color: #f60;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+       .loader-container {
+          display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background-color: rgba(255, 255, 255, 0.8);
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+        z-index: 9999; 
+
+       }
+
+      .loader {
+       border: 5px solid #f3f3f3;
+       border-top: 5px solid #3498db;
+       border-radius: 50%;
+       width: 50px;
+       height: 50px;
+       animation: spin 2s linear infinite;
+     
+     }
+
+     @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+
+   }     
+
+    .product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    -ms-flex-align: end;
+    
+     }
+
+    .product {
+
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    
+    } 
+
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #c8c2c6;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-overflow: ellipsis;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    animation: infinite;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff9f9;
+    font-style: italic;
+}
+.footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .payment-icons {
+            margin-top: 10px;
+        }
+
+        .payment-icons img {
+            width: 40px; 
+            margin: 0 10px;
+        }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-menu li {
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: italic;
+    font-size: 14px;
+}
+
+#cookie-notification {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#accept-cookies,
+#decline-cookies {
+  background-color: #e4184b;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+    </style>
+<body>
+    <div class="search-container">
+        <form action="https://www.jumia.com/" method="get">
+            <input type="text" name="q" placeholder="Search on Jumia">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=254713713176&text=Hello%20there!" class="whatsapp-button">
+   <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\wats.png" alt="WhatsApp Icon" class="whatsapp-icon">
+   <i>click here to chat on WhatsApp</i>
+    </a>
+    <p> <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call +254713713176</i></p>
+    <div class="search-bar">
+        <form action="https://Kitale_Marketplace.com/">
+        <input type="text" name="q" placeholder="Search on kitale Marketplace">
+        <button class="search-button">Search</button>
+        </form>
+    </div>
+    <header>
+        <b><h1>The Kitale_Marketplace</h1><b>
+        <p><i>Your one-stop destination for shopping!</i></p>
+		<p><i>browse your favourite and add to cart to purchase/order only at Kitale-marketplace!</i></p>
+    </header>
+    <header>
+        <nav>
+            <ul class="top-menu">
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#">Services &#9662;</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">&nbsp;&nbsp;products</a></li>
+                    <li><a href="#">&nbsp;Developer</a></li>
+                    <li><a href="#">Order </a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="loader-container">
+        <div class="loader">Kitale market</div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\images.jfif" alt="Product 1">
+            <h2>K-gas 13Kg</h2>
+            <p><i>complete 13Kg gas at an offer</i>.</p>
+            <p>Price: <s>$55.00</s> $30.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\images (1).jfif" alt="Product 2">
+            <h2>oppo Reno9</h2>
+            <p><i><br> condition used oppo Reno9..<br> location Kitale Kibomet.</i></i></p>
+            <p>Price: <s>$150.00</s> $75.00</p>
+            <p><I>click below product to add to cart</I></p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\_TB15.jpg" alt="Product 3">
+            <h2>body-shaper</h2>
+            <p>women outfit bodyshaper.</p>
+            <p>Price:<s>$200.00</s>  $80.00</p>
+            <button>Add to Cart</button>
+        </div>
+         
+    </div>
+      </div>
+      
+    <div class="footer">
+        <p>Dear customer We accept the following payment methods:</p>
+        <div class="payment-icons">
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\images (4).png" alt="Visa" />
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\images (8).png" alt="MasterCard" />
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\download (1).png" alt="paypal" />
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\download (3).png" alt="alipay" />
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\download (3).jfif" alt="discover" />
+            <img src="C:\Users\KIDRA GAMA\Documents\MYWORKSPACE\resources\download (5).png" alt="M-pesa" />
+            
+        </div>
+    </div>
+    <div id="cookie-notification">
+        <p>This website uses cookies to ensure you get the best user experience on our website.</p>
+        <button id="accept-cookies">Accept</button>
+        <button id="decline-cookies">Decline</button>
+      </div>
+      
+
+    <footer>
+        <p>&copy;<i> 2023 Kitale-marketplace. All rights reserved</i>.</p>
+        <div class="footer-content">
+            <div class="business-card">
+                <div class="contact-info">
+                    <a href="mailto:leviuswafula528@gmail.com"></a>
+                    
+            </div>
+            
+            <div class="contact-info">
+                <form action="newsletter-subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+       
+<script>
+    // When the page has fully loaded, hide the loader
+    window.addEventListener('load', function() {
+        document.querySelector('.loader-container').style.display = 'none';
+do {
+        
+} while (condition);});
+        // Close dropdown when clicking outside of it
+    document.addEventListener("click", function (event) {
+    const dropdowns = document.querySelectorAll(".dropdown");
+    dropdowns.forEach(function (dropdown) {
+        if (!dropdown.contains(event.target)) {
+            dropdown.querySelector(".dropdown-content").style.display = "none";
+        }
+    });
+});
+</script>
+<script>
+    const acceptButton = document.getElementById("accept-cookies");
+    const declineButton = document.getElementById("decline-cookies");
+    const cookieNotification = document.getElementById("cookie-notification");
+  
+    // Check if the user has already made a choice regarding cookies
+    if (!localStorage.getItem("cookies_accepted")) {
+      cookieNotification.style.display = "block";
+    }
+  
+    acceptButton.addEventListener("click", () => {
+      localStorage.setItem("cookies_accepted", true);
+      cookieNotification.style.display = "none";
+    });
+  
+    declineButton.addEventListener("click", () => {
+      localStorage.setItem("cookies_accepted", false);
+      cookieNotification.style.display = "none";
+      // You can add additional code to handle the decline, such as not setting any cookies.
+    });
+
+    // server.js
+
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Middleware to parse JSON data
+app.use(express.json());
+
+// Define routes and back-end logic here
+// For example, you can create an API endpoint like this:
+app.get('/api/products', (req, res) => {
+  // Your logic to retrieve and return product data from a database or other source
+  const products = [
+    {
+      id: 1,
+      name: 'K-gas 13Kg',
+      description: 'Complete 13Kg gas at an offer',
+      price: 30.0,
+    },
+    // Add more products as needed
+  ];
+
+  res.json(products);
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
+  </script>
+</body>
+</html>
